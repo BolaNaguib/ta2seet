@@ -1,10 +1,7 @@
 <?php include'header.php'; ?>
 <section>
   <b> إظهار البيانات  </b>
-  <span> من </span>
-  <input class="uk-input uk-width-auto" type="date" data-uk-datepicker="{format:'DD.MM.YYYY'}" placeholder="ميعاد القسط">
-  <span> إلى </span>
-  <input class="uk-input uk-width-auto" type="date" data-uk-datepicker="{format:'DD.MM.YYYY'}" placeholder="ميعاد القسط">
+  <input type="text" />
 
   <div class="" uk-grid>
     <div class="uk-width-1-1">
