@@ -8,6 +8,8 @@
 <!-- Add new maincategory modal -->
 <?php include'addmaincategory.php'; ?>
 
+<!-- Add new subcategory modal -->
+<?php include'addsubcategory.php'; ?>
 
 
 <div id="new_installment" class="uk-flex-top" uk-modal>

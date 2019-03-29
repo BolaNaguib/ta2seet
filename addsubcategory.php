@@ -3,12 +3,12 @@
 
     <button class="uk-modal-close-default" type="button" uk-close></button>
     <div class="uk-padding">
-      <h3>إدخال منطقة رئيسية جديدة </h3>
+      <h3>إدخال منطقة فرعية جديدة </h3>
       <form class="uk-grid-small" uk-grid>
 
 
         <div class="uk-width-1-1">
-          <input class="uk-input" type="text" placeholder="إسم المنطقة الرئيسية">
+          <input class="uk-input" type="text" placeholder="إسم المنطقة الفرعية">
         </div>
 
 

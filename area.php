@@ -38,7 +38,7 @@
     </div>
 
     <div class="uk-width-1-3">
-      <a href="clients.php">
+      <a href="#sub_category" uk-toggle> 
         <div class="uk-card uk-card-default uk-padding uk-padding-large">
           <h1>
             إضافة منطقة جديدة

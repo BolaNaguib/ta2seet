@@ -1,7 +1,14 @@
 <?php include'header.php'; ?>
 <section>
-  <b> إظهار البيانات  </b>
-  <input type="text" />
+  <div class="">
+    <h1> المنظقة الرئيسية <b> السويس </b></h1>
+    <h1> المنطقة الفرعية <b> مديرية الصحة </b></h1>
+  </div>
+  <div class="">
+    <b> إظهار البيانات  </b>
+    <input class="uk-width-auto" type="text" />
+  </div>
+
 
   <div class="" uk-grid>
     <div class="uk-width-1-1">
