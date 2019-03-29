@@ -14,6 +14,9 @@
     <body>
       <div class="header">
 
+        <?php include'navbar.php'; ?>
+
+
       </div>
       <div class="content">
         <div class="uk-padding">
