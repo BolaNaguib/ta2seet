@@ -5,7 +5,8 @@
 </div>
 
 
-
+<!-- Add new maincategory modal -->
+<?php include'addmaincategory.php'; ?>
 
 
 

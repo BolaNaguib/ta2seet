@@ -18,7 +18,7 @@
       </div></a>
     </div>
     <div class="uk-width-1-3">
-      <a href="#">  <div class="uk-card uk-card-default uk-padding uk-padding-large">
+      <a href="#new_category" uk-toggle>  <div class="uk-card uk-card-default uk-padding uk-padding-large">
 
                   <h1> إضافة قسم جديد </h1>
 
