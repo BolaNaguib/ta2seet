@@ -20,6 +20,11 @@
           <li class="uk-nav-header"><a href="clients.php">searchclient</a></li>
           <li class="uk-nav-header"><a href="clientpage.php">clientpage</a></li>
           <li class="uk-nav-header"><a href="delayed.php">delayed</a></li>
+          <li class="uk-nav-header"><a href="adduser.php">Adduser</a></li>
+          <li class="uk-nav-header"><a href="adminlist.php">Adduser</a></li>
+          <li class="uk-nav-header"><a href="addeditinstallment.php">new installement</a></li>
+          <li class="uk-nav-header"><a href="addnewclient.php">addnewclient</a></li>
+
 
         </ul>
 
