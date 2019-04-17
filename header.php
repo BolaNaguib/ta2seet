@@ -14,7 +14,9 @@
     <body>
       <div class="header">
 
-        <?php include'navbar.php'; ?>
+        <?php 
+          require_once 'navbar.php'; 
+          ?>
 
 
       </div>

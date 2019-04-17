@@ -13,19 +13,39 @@
     <div class="uk-offcanvas-bar uk-offcanvas-default">
 
         <ul class="uk-nav uk-nav-default uk-nav-">
-          <li class="uk-nav-header"><a href="index.php">loginpage</a></li>
-          <li class="uk-nav-header"><a href="createuser.php">createuser</a></li>
+          <?php
+            if(empty($_SESSION['didi'])){
+                echo '
+                <li class="uk-nav-header"><a href="index.php">loginpage</a></li>
+                ';
+            }else if(!empty($_SESSION['didi'])){
+                  echo '
+                <li class="uk-nav-header"><a href="index.php?we=1">log Out page</a></li>
+                ';
+            }
+    /*        <!--          <li class="uk-nav-header"><a href="area.php">subcategory</a></li>-->
+<!--          <li class="uk-nav-header"><a href="clients.php">searchclient</a></li>-->
+<!--          <li class="uk-nav-header"><a href="clientpage.php">clientpage</a></li>-->*/
+            ?>
           <li class="uk-nav-header"><a href="district.php">maincategory</a></li>
-          <li class="uk-nav-header"><a href="area.php">subcategory</a></li>
-          <li class="uk-nav-header"><a href="clients.php">searchclient</a></li>
-          <li class="uk-nav-header"><a href="clientpage.php">clientpage</a></li>
+
           <li class="uk-nav-header"><a href="delayed.php">delayed</a></li>
-          <li class="uk-nav-header"><a href="adduser.php">Adduser</a></li>
-          <li class="uk-nav-header"><a href="adminlist.php">Adduser</a></li>
-          <li class="uk-nav-header"><a href="addeditinstallment.php">new installement</a></li>
-          <li class="uk-nav-header"><a href="addnewclient.php">addnewclient</a></li>
+         
+            <?php
+            // <li class="uk-nav-header"><a href="reports.php">reports</a></li>
+            if(!empty($_SESSION['ta2_admin'])){
+                echo '
+                     <li class="uk-nav-header"><a href="adminlist.php">Adduser</a></li>
+          
+                     <li class="uk-nav-header"><a href="static.php">static</a></li>
+                     
+                ';
+//                           <li class="uk-nav-header"><a href="addnewclient.php">addnewclient</a></li>
+            }
+            ?>
+     
 
-
+       
         </ul>
 
     </div>
