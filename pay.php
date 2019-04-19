@@ -1,4 +1,5 @@
 <?php 
+session_start();
 ob_start();
 include'header.php'; 
 
@@ -41,9 +42,8 @@ if(empty($_GET['i']) || empty($_GET['n'])){
           if(isset($_POST['pay'])){
               if(!empty($_POST['price']) && !empty($_POST['notes'])){
                    $date_today = date("Y : m : d");
-          $upas = mysqli_query($mu2,"INSERT INTO pays(client_id,price,notes,el2st_or_cash,date_today) VALUES ('".$_GET['ii']."','".myf1($_POST['price'])."','".myf1($_POST['notes'])."','".myf1("2st")."','".myf1($date_today)."')");
-
-                  if(isset($upas)){
+ $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_today,price,notes,kind) VALUES ('".$_GET['ii']."','".myf1($date_today)."','".myf1($_POST['price'])."','".myf1($_POST['notess'])."','".myf1("2st_pay")."')");
+                  if(isset($ms)){
                      header("Location: clients.php?i=".$_GET['i']."&n=".$_GET['n']);
                   }
               }
