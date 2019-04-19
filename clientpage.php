@@ -227,8 +227,8 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
         </form>
 </section>
 <section>
-  <div uk-grid>
-    <div class="uk-width-1-2">
+  <div class="uk-child-width-1-1" uk-grid>
+    <div class="">
       <h3>
          <?php
           $nummber =0;
@@ -322,7 +322,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
         <button class="uk-button uk-button-default uk-width-expand refundinststatus" type="button" name="button" href="#refund" uk-toggle=""> مرتجعات </button>
         </div>
         <div class="uk-width-1-4">
-          <a class="uk-button uk-button-default" href="tabels.php?in=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
+          <a class="uk-button uk-button-default printstatus" href="tabels.php?in=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
         </div>
       </div>
     </div>
@@ -331,7 +331,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
 
 
 
-    <div class="uk-width-1-2">
+    <div class="">
       <h3>
            <?php
           $nummbers =0;
@@ -421,7 +421,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
           <button class="uk-button uk-button-default uk-width-expand refundinststatus" type="button" name="button"  href="#refund2" uk-toggle> مرتجعات </button>
         </div>
         <div class="uk-width-1-4">
-          <a class="uk-button uk-button-default" href="tabels.php?ic=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
+          <a class="uk-button uk-button-default printstatus" href="tabels.php?ic=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
         </div>
       </div>
     </div>
