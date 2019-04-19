@@ -21,7 +21,7 @@ if(empty($_SESSION['didi'])){
       $uh=mysqli_fetch_assoc($hu);
           $name = myf2($uh['name']);
           echo '
-          <div class="uk-width-1-3 uk-first-column">
+          <div class="uk-width-1-3@m uk-width-1-1 uk-first-column">
       <a href="area.php?n='.$uh['name'].'&i='.myf1($uh['id']).'">  <div class="uk-card uk-card-default uk-padding uk-padding-large districtcard">
 
                   <h1> '.$name.' </h1>
@@ -37,7 +37,7 @@ if(empty($_SESSION['didi'])){
       while($uh=mysqli_fetch_assoc($hu)){
           $name = myf2($uh['name']);
           echo '
-          <div class="uk-width-1-3 uk-first-column">
+          <div class="uk-width-1-3@m uk-width-1-1 uk-first-column">
       <a href="area.php?n='.$uh['name'].'&i='.myf1($uh['id']).'">  <div class="uk-card uk-card-default uk-padding uk-padding-large districtcard">
 
                   <h1> '.$name.' </h1>
@@ -54,7 +54,7 @@ if(empty($_SESSION['didi'])){
 
           echo '
 
-        <div class="uk-width-1-3">
+        <div class="uk-width-1-3@m uk-width-1-1">
       <a href="#new_category" uk-toggle>
 
         <div class="uk-card uk-card-default uk-padding uk-padding-large adddistrictcard">
