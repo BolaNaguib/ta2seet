@@ -1,9 +1,9 @@
 <?php
 
 $server_name = "localhost";
-$user_name = "root";
-$pass = "root";
-$db_name = "scotchbox";
+$user_name = "bolanagu_ta2seet";
+$pass = "123qwe!@#QWE";
+$db_name = "bolanagu_ta2seet";
 
 $mu2 = @mysqli_connect($server_name,$user_name,$pass,$db_name);
 
