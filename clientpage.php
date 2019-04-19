@@ -283,7 +283,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
             <td> <span class="payinststatus">  دفع قسط </span></td>';
                 }else if($uus['kind']==""){
                     $tex=' <td> '.$note.' </td>
-            <td> <span class="inststatus">  قسط جديد</span></td>';
+            <td> <span class="inststatus">  قسط جديد</span> </td>';
                 }
                 $nunumb++;
             echo '
@@ -313,13 +313,13 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
 
       <div class="" uk-grid>
         <div class="uk-width-1-4">
-       <button class="uk-button uk-button-default uk-width-expand" type="button" name="button" href="#new_installment" uk-toggle=""> قسط جديد </button>
+       <button class="uk-button uk-button-default uk-width-expand inststatus" type="button" name="button" href="#new_installment" uk-toggle=""> قسط جديد </button>
         </div>
         <div class="uk-width-1-4">
-                 <button class="uk-button uk-button-default uk-width-expand" type="button" name="button" href="#pay_installment" uk-toggle> دفع قسط </button>
+                 <button class="uk-button uk-button-default uk-width-expand payinststatus" type="button" name="button" href="#pay_installment" uk-toggle> دفع قسط </button>
         </div>
         <div class="uk-width-1-4">
-        <button class="uk-button uk-button-default uk-width-expand" type="button" name="button" href="#refund" uk-toggle=""> مرتجعات </button>
+        <button class="uk-button uk-button-default uk-width-expand refundinststatus" type="button" name="button" href="#refund" uk-toggle=""> مرتجعات </button>
         </div>
         <div class="uk-width-1-4">
           <a class="uk-button uk-button-default" href="tabels.php?in=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
@@ -412,13 +412,13 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
       </table>
       <div class="" uk-grid>
         <div class="uk-width-1-4">
-          <button class="uk-button uk-button-default uk-width-expand" type="button" name="button" href="#new_installmentss" uk-toggle> كاش جديد </button>
+          <button class="uk-button uk-button-default uk-width-expand inststatus" type="button" name="button" href="#new_installmentss" uk-toggle> كاش جديد </button>
         </div>
         <div class="uk-width-1-4">
-          <button class="uk-button uk-button-default uk-width-expand" type="button" name="button" href="#pay_installment_cash" uk-toggle> دفع كاش </button>
+          <button class="uk-button uk-button-default uk-width-expand payinststatus" type="button" name="button" href="#pay_installment_cash" uk-toggle> دفع كاش </button>
         </div>
         <div class="uk-width-1-4">
-          <button class="uk-button uk-button-default uk-width-expand" type="button" name="button"  href="#refund2" uk-toggle> مرتجعات </button>
+          <button class="uk-button uk-button-default uk-width-expand refundinststatus" type="button" name="button"  href="#refund2" uk-toggle> مرتجعات </button>
         </div>
         <div class="uk-width-1-4">
           <a class="uk-button uk-button-default" href="tabels.php?ic=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
