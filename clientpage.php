@@ -322,7 +322,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
         <button class="uk-button uk-button-default uk-width-expand refundinststatus" type="button" name="button" href="#refund" uk-toggle=""> مرتجعات </button>
         </div>
         <div class="uk-width-1-4">
-          <a class="uk-button uk-button-default printstatus" href="tabels.php?in=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
+          <a class="uk-button uk-button-default uk-width-expand  printstatus" href="tabels.php?in=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
         </div>
       </div>
     </div>
@@ -421,7 +421,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
           <button class="uk-button uk-button-default uk-width-expand refundinststatus" type="button" name="button"  href="#refund2" uk-toggle> مرتجعات </button>
         </div>
         <div class="uk-width-1-4">
-          <a class="uk-button uk-button-default printstatus" href="tabels.php?ic=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
+          <a class="uk-button uk-button-default uk-width-expand  printstatus" href="tabels.php?ic=110&i=<?php echo $_GET['i']; ?>"> طباعة </a>
         </div>
       </div>
     </div>
