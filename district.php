@@ -38,7 +38,7 @@ if(empty($_SESSION['didi'])){
           $name = myf2($uh['name']);
           echo '
           <div class="uk-width-1-3 uk-first-column">
-      <a href="area.php?n='.$uh['name'].'&i='.myf1($uh['id']).'">  <div class="uk-card uk-card-default uk-padding uk-padding-large">
+      <a href="area.php?n='.$uh['name'].'&i='.myf1($uh['id']).'">  <div class="uk-card uk-card-default uk-padding uk-padding-large districtcard">
 
                   <h1> '.$name.' </h1>
 
