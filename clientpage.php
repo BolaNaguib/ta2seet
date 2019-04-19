@@ -294,7 +294,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
             <td>'.$totall.'</td>
            '.$tex;
                 if($tex==' <td> '.$note.' </td>
-            <td> <span class="inststatus">  قسط جديد</span> </td>'){
+            <td> قسط </td>'){
                    echo '<td>
                    <a class="uk-button uk-button-default" name="button" href="addeditinstallment.php?in='.myf1($uus['id']).'&i='.$_GET['i'].'" uk-toggle=""> تعديل</a>
             </td>';
