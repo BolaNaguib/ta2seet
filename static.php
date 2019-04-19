@@ -333,7 +333,7 @@ $aee = mydate($date_fy,$date_fm,$date_fd,$date_ty,$date_tm,$date_td);
             <td>'.$back.'</td>
             <td>'.$tos.'</td>
             <td><a class="uk-button uk-button-default" name="button" href="reports.php?i='.myf1($Arrr2['id']).'" uk-toggle=""> تقارير</a></td>
-            <td><a class="uk-button uk-button-default" name="button" href="reports.php?i='.myf1($Arrr2['id']).'" uk-toggle=""> تقارير مفصلة</a></td>
+            <td><a class="uk-button uk-button-default" name="button" href="reports_m.php?i='.myf1($Arrr2['id']).'" uk-toggle=""> تقارير مفصلة</a></td>
 
           </tr>
             ';   
@@ -514,7 +514,7 @@ $aee = mydate($date_fy,$date_fm,$date_fd,$date_ty,$date_tm,$date_td);
             <td>'.$back.'</td>
             <td>'.$tos.'</td>
   <td><a class="uk-button uk-button-default" name="button" href="reports.php?i='.myf1($Arrr2['id']).'" uk-toggle=""> تقارير</a></td>
-            <td><a class="uk-button uk-button-default" name="button" href="reports.php?i='.myf1($Arrr2['id']).'" uk-toggle=""> تقارير مفصلة</a></td>
+            <td><a class="uk-button uk-button-default" name="button" href="reports_m.php?i='.myf1($Arrr2['id']).'" uk-toggle=""> تقارير مفصلة</a></td>
           </tr>
             ';   
             }

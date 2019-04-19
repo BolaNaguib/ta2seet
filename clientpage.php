@@ -293,8 +293,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
             <td>'.myf2($uus['product_name']).'</td>
             <td>'.$totall.'</td>
            '.$tex;
-                if($tex==' <td> '.$note.' </td>
-            <td> قسط </td>'){
+                if($uus['kind']==""){
                    echo '<td>
                    <a class="uk-button uk-button-default" name="button" href="addeditinstallment.php?in='.myf1($uus['id']).'&i='.$_GET['i'].'" uk-toggle=""> تعديل</a>
             </td>';

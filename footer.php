@@ -5,7 +5,6 @@
 </div>
 
 <?php 
-ob_start();
 //include'header.php'; 
 
 require_once "connect/confi.php";
@@ -67,7 +66,7 @@ require_once "connect/secri.php";
                  $m3is = mysqli_query($mu2,"SELECT * FROM users WHERE name='".myf1($name)."'");
             $u2sww = mysqli_fetch_assoc($m3is);
               
-                $m20is = mysqli_query($mu2,"SELECT * FROM el2st WHERE user_id='".myf1($u2sww['id'])."' AND date_y!='' AND date_m!='' AND date_d!='' AND kind=''");
+                $m20is = mysqli_query($mu2,"SELECT * FROM el2st WHERE user_id='".$_GET['i']."' AND date_y!='' AND date_m!='' AND date_d!='' AND kind=''");
             while($u20ww = mysqli_fetch_assoc($m20is)){
                 $ni++;
             }
@@ -207,32 +206,33 @@ require_once "connect/secri.php";
                 }
              
             }
+         
                 $mmu = mysqli_query($mu2,"SELECT * FROM users WHERE name='".myf1($_POST['client1'])."'");
                 $uio = mysqli_fetch_assoc($mmu);
                 if(!empty($uio['id'])){
                     if($ni==0){
-                        $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".myf1($uio['id'])."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product1'])."','".myf1($_POST['pric'])."','".myf1($_POST['usefu'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
+                        $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".$_GET['i']."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product1'])."','".myf1($_POST['pric'])."','".myf1($_POST['usefu'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
                     }else if($ni>0){
-                         $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,date_today) VALUES ('".myf1($uio['id'])."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product1'])."','".myf1($_POST['pric'])."','".myf1($_POST['usefu'])."','".myf1($total)."','".myf1($date_today)."')");
+                         $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,date_today) VALUES ('".$_GET['i']."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product1'])."','".myf1($_POST['pric'])."','".myf1($_POST['usefu'])."','".myf1($total)."','".myf1($date_today)."')");
                     }
                         if(!empty($_POST['product1']) && !empty($_POST['product2'])){
               $total = ($_POST['pric2'] * $_POST['usefu2']/100) + $_POST['pric2'];
-                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".myf1($uio['id'])."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product2'])."','".myf1($_POST['pric2'])."','".myf1($_POST['usefu2'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
+                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".$_GET['i']."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product2'])."','".myf1($_POST['pric2'])."','".myf1($_POST['usefu2'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
 
                         }
                      if(!empty($_POST['product1']) && !empty($_POST['product2']) && !empty($_POST['product3'])){
                                    $total = ($_POST['pric3'] * $_POST['usefu3']/100) + $_POST['pric3'];
-                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".myf1($uio['id'])."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product3'])."','".myf1($_POST['pric3'])."','".myf1($_POST['usefu3'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
+                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".$_GET['i']."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product3'])."','".myf1($_POST['pric3'])."','".myf1($_POST['usefu3'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
 
                         }
                        if(!empty($_POST['product1']) && !empty($_POST['product2']) && !empty($_POST['product3']) && !empty($_POST['product4'])){
                                      $total = ($_POST['pric4'] * $_POST['usefu4']/100) + $_POST['pric4'];
-                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".myf1($uio['id'])."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product4'])."','".myf1($_POST['pric4'])."','".myf1($_POST['usefu4'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
+                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".$_GET['i']."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product4'])."','".myf1($_POST['pric4'])."','".myf1($_POST['usefu4'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
 
                         }
                        if(!empty($_POST['product1']) && !empty($_POST['product2']) && !empty($_POST['product3']) && !empty($_POST['product4']) && !empty($_POST['product5'])){
                                      $total = ($_POST['pric5'] * $_POST['usefu5']/100) + $_POST['pric5'];
-                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".myf1($uio['id'])."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product5'])."','".myf1($_POST['pric5'])."','".myf1($_POST['usefu5'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
+                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_y,date_m,	date_d,product_name,price,useful,total,notes,date_today) VALUES ('".$_GET['i']."','".myf1($date_y)."','".myf1($date_m)."','".myf1($date_d)."','".myf1($_POST['product5'])."','".myf1($_POST['pric5'])."','".myf1($_POST['usefu5'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."')");
 
                         }
                     
@@ -386,25 +386,25 @@ require_once "connect/secri.php";
                     $nu++;
                 }
              
-                 $mmu = mysqli_query($mu2,"SELECT * FROM users WHERE name='".myf1($_POST['client1'])."'");
+                 $mmu = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
                 $uio = mysqli_fetch_assoc($mmu);
                 if(!empty($uio['id'])){
-            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".myf1($uio['id'])."','".myf1($_POST['product1'])."','".myf1($_POST['pric'])."','".myf1($_POST['usefu10'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
+            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".$_GET['i']."','".myf1($_POST['product1'])."','".myf1($_POST['pric'])."','".myf1($_POST['usefu10'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
                         if(!empty($_POST['product1']) && !empty($_POST['product2'])){
                             $total = ($_POST['pric20'] * $_POST['usefu20']/100) + $_POST['pric20'];
-                            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".myf1($uio['id'])."','".myf1($_POST['product2'])."','".myf1($_POST['pric20'])."','".myf1($_POST['usefu20'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
+                            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".$_GET['i']."','".myf1($_POST['product2'])."','".myf1($_POST['pric20'])."','".myf1($_POST['usefu20'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
                         }
                      if(!empty($_POST['product1']) && !empty($_POST['product2']) && !empty($_POST['product3'])){
                          $total = ($_POST['pric30'] * $_POST['usefu30']/100) + $_POST['pric30'];
-                            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".myf1($uio['id'])."','".myf1($_POST['product3'])."','".myf1($_POST['pric30'])."','".myf1($_POST['usefu30'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
+                            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".$_GET['i']."','".myf1($_POST['product3'])."','".myf1($_POST['pric30'])."','".myf1($_POST['usefu30'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
                         }   
                     if(!empty($_POST['product1']) && !empty($_POST['product2']) && !empty($_POST['product3']) && !empty($_POST['product4'])){
                         $total = ($_POST['pric40'] * $_POST['usefu40']/100) + $_POST['pric40'];
-                            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".myf1($uio['id'])."','".myf1($_POST['product4'])."','".myf1($_POST['pric40'])."','".myf1($_POST['usefu40'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
+                            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".$_GET['i']."','".myf1($_POST['product4'])."','".myf1($_POST['pric40'])."','".myf1($_POST['usefu40'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
                         }
                      if(!empty($_POST['product1']) && !empty($_POST['product2']) && !empty($_POST['product3']) && !empty($_POST['product4']) && !empty($_POST['product5'])){
                          $total = ($_POST['pric50'] * $_POST['usefu50']/100) + $_POST['pric50'];
-                            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".myf1($uio['id'])."','".myf1($_POST['product5'])."','".myf1($_POST['pric50'])."','".myf1($_POST['usefu50'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
+                            $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,product_name,price,useful,total,notes,date_today,kind) VALUES ('".$_GET['i']."','".myf1($_POST['product5'])."','".myf1($_POST['pric50'])."','".myf1($_POST['usefu50'])."','".myf1($total)."','".myf1($_POST['note'])."','".myf1($date_today)."','".myf1("cash")."')");
                         }
                 if(isset($ms)){
                      header("Location: clientpage.php?i=".$_GET['i']);
@@ -578,11 +578,11 @@ $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,price,product_name,date_today
 <?php
             if(isset($_POST['button2'])){
              $date_today = date("Y : m : d");
-         $msss = mysqli_query($mu2,"SELECT * FROM users WHERE name='".myf1($_POST['client'])."'");
+         $msss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
                 $mmus = mysqli_fetch_assoc($msss);
                 if(!empty($mmus['id'])){
             
-                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_today,price,notes,kind) VALUES ('".myf1($mmus['id'])."','".myf1($date_today)."','".myf1($_POST['price'])."','".myf1($_POST['notess'])."','".myf1("2st_pay")."')");
+                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_today,price,notes,kind) VALUES ('".$_GET['i']."','".myf1($date_today)."','".myf1($_POST['price'])."','".myf1($_POST['notess'])."','".myf1("2st_pay")."')");
                         
                 if(isset($ms)){
                   header("Location: clientpage.php?i=".$_GET['i']);
@@ -626,11 +626,11 @@ $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,price,product_name,date_today
 <?php
             if(isset($_POST['bww2'])){
              $date_today = date("Y : m : d");
-         $msss = mysqli_query($mu2,"SELECT * FROM users WHERE name='".myf1($_POST['client'])."'");
+         $msss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
                 $mmus = mysqli_fetch_assoc($msss);
                 if(!empty($mmus['id'])){
        
-                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_today,price,notes,kind) VALUES ('".myf1($mmus['id'])."','".myf1($date_today)."','".myf1($_POST['price'])."','".myf1($_POST['notess'])."','".myf1("cash_pay")."')");
+                $ms = mysqli_query($mu2,"INSERT INTO el2st(user_id,date_today,price,notes,kind) VALUES ('".$_GET['i']."','".myf1($date_today)."','".myf1($_POST['price'])."','".myf1($_POST['notess'])."','".myf1("cash_pay")."')");
                         
                 if(isset($ms)){
                   header("Location: clientpage.php?i=".$_GET['i']);

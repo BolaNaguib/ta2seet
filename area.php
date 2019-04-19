@@ -44,5 +44,7 @@ if(empty($_GET['i']) || empty($_GET['n']) || empty($_SESSION['didi'])){
   </div>
 </section>
 <?php
+
+include'addsubcategory.php'; 
 ob_end_flush();
-include'addsubcategory.php'; ?>
+?>
