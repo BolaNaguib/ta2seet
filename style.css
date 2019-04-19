@@ -55,7 +55,30 @@
   border-radius: 4px;
   box-shadow: 5px 5px 5px 0px #c3c1c1;
   transition: 300ms;
+  text-decoration: none;
 }
 .districtcard h1 {
+color: inherit !important;
+}
+
+
+
+
+.adddistrictcard {
+  background-color: #018e00;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+.adddistrictcard:hover {
+  background-color: #155a02;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+  text-decoration: none;
+}
+.adddistrictcard h1 {
 color: inherit !important;
 }
