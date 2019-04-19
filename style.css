@@ -82,3 +82,49 @@ color: inherit !important;
 .adddistrictcard h1 {
 color: inherit !important;
 }
+
+
+
+
+
+
+.areacard {
+  background-color: #8e0047;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+.areacard:hover {
+  background-color: #6d0036;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+  text-decoration: none;
+}
+.areacard h1 {
+color: inherit !important;
+}
+
+
+
+
+.addareacard {
+  background-color: #018e00;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+.addareacard:hover {
+  background-color: #155a02;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+  text-decoration: none;
+}
+.addareacard h1 {
+color: inherit !important;
+}

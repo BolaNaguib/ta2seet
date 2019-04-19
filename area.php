@@ -1,7 +1,7 @@
-<?php 
+<?php
 session_start();
 ob_start();
-include 'header.php'; 
+include 'header.php';
 
 require_once "connect/confi.php";
 require_once "connect/secri.php";
@@ -19,9 +19,9 @@ if(empty($_GET['i']) || empty($_GET['n']) || empty($_SESSION['didi'])){
       while($ms2 = mysqli_fetch_assoc($ms)){
           $name = $ms2['name'];
           $id = $ms2['id'];
-      echo '  <div class="uk-width-1-3">
+      echo '  <div class="uk-width-1-3@m uk-width-1-1">
       <a href="clients.php?n='.$name.'&i='.myf1($id).'">
-        <div class="uk-card uk-card-default uk-padding uk-padding-large">
+        <div class="uk-card uk-card-default uk-padding uk-padding-large areacard">
           <h1> '.myf2($name).' </h1>
         </div>
       </a>
@@ -29,20 +29,20 @@ if(empty($_GET['i']) || empty($_GET['n']) || empty($_SESSION['didi'])){
    ';
       }
       ?>
- 
-    <div class="uk-width-1-3">
-      <a href="#sub_category" uk-toggle> 
 
-        <div class="uk-card uk-card-default uk-padding uk-padding-large">
+    <div class="uk-width-1-3@m uk-width-1-1">
+      <a href="#sub_category" uk-toggle>
+
+        <div class="uk-card uk-card-default uk-padding uk-padding-large addareacard">
           <h1>
             إضافة منطقة جديدة
           </h1>
         </div>
       </a>
-        
+
     </div>
   </div>
 </section>
-<?php 
+<?php
 ob_end_flush();
 include'addsubcategory.php'; ?>
