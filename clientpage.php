@@ -32,27 +32,27 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
   <h3>بيانات العميل</h3>
     <form method="post">
   <div class="uk-margin">
-    <b>الإسم :</b><span><input class="userInput" type="text" name="names" value="<?php echo myf2($mmu['name']); ?>"/></span>
+    <b class="userLabel">الإسم</b><input class="userInput" type="text" name="names" value="<?php echo myf2($mmu['name']); ?>"/>
 
   </div>
   <div class="uk-margin">
-    <b>رقم التليفون :</b><span><input class="userInput" type="text" name="phone" value="<?php echo myf2($mmu['phone']); ?>"/></span>
+    <b class="userLabel">رقم التليفون</b><input class="userInput" type="text" name="phone" value="<?php echo myf2($mmu['phone']); ?>"/>
 
   </div>
   <div class="uk-margin">
-    <b>العنوان :</b><span><input class="userInput" type="text" name="address" value="<?php echo myf2($mmu['address']); ?>"/></span>
+    <b class="userLabel">العنوان</b><input class="userInput" type="text" name="address" value="<?php echo myf2($mmu['address']); ?>"/>
 
   </div>
   <div class="uk-margin">
-    <b>القسم :</b><span> <input class="userInput" type="text" name="section" value="<?php echo myf2($m1232mu['name']); ?>"/></span>
+    <b class="userLabel">القسم</b> <input class="userInput" type="text" name="section" value="<?php echo myf2($m1232mu['name']); ?>"/>
 
   </div>
   <div class="uk-margin">
-    <b>المنطقة :</b><span> <input class="userInput" type="text" name="area" value="<?php echo myf2($m122mu['name']); ?>"/></span>
+    <b class="userLabel">المنطقة</b> <input class="userInput" type="text" name="area" value="<?php echo myf2($m122mu['name']); ?>"/>
 
   </div>
   <div class="uk-margin">
-    <b>ميعاد القسط :</b><span>
+    <b class="userLabel">ميعاد القسط</b>
             <?php
 
             $mi2is = mysqli_query($mu2,"SELECT * FROM el2st WHERE user_id='".$_GET['i']."'");
@@ -136,7 +136,6 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
 
       }
                 ?>
-      </span>
            <div class="uk-width-1-1">
           <input type="date" name="dated" data-uk-datepicker="{format:'DD.MM.YYYY'}" placeholder="ميعاد القسط">
         </div>
