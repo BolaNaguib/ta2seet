@@ -31,27 +31,28 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
 <section>
   <h3>بيانات العميل</h3>
     <form method="post">
-  <div class="uk-margin">
-    <b class="userLabel">الإسم</b><input class="userInput" type="text" name="names" value="<?php echo myf2($mmu['name']); ?>"/>
+      <div class="uk-child-width-1-3" uk-grid>
 
+  <div class="">
+    <b class="userLabel">الإسم</b><input class="userInput" type="text" name="names" value="<?php echo myf2($mmu['name']); ?>"/>
   </div>
-  <div class="uk-margin">
+  <div class="">
     <b class="userLabel">رقم التليفون</b><input class="userInput" type="text" name="phone" value="<?php echo myf2($mmu['phone']); ?>"/>
 
   </div>
-  <div class="uk-margin">
+  <div class="">
     <b class="userLabel">العنوان</b><input class="userInput" type="text" name="address" value="<?php echo myf2($mmu['address']); ?>"/>
 
   </div>
-  <div class="uk-margin">
+  <div class="">
     <b class="userLabel">القسم</b> <input class="userInput" type="text" name="section" value="<?php echo myf2($m1232mu['name']); ?>"/>
 
   </div>
-  <div class="uk-margin">
+  <div class="">
     <b class="userLabel">المنطقة</b> <input class="userInput" type="text" name="area" value="<?php echo myf2($m122mu['name']); ?>"/>
 
   </div>
-  <div class="uk-margin">
+  <div class="">
     <b class="userLabel">ميعاد القسط</b>
             <?php
 
@@ -140,6 +141,8 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
           <input type="date" name="dated" data-uk-datepicker="{format:'DD.MM.YYYY'}" placeholder="ميعاد القسط">
         </div>
   </div>
+</div>
+
          <div class="uk-margin">
 <input class="uk-button uk-button-default" type="submit" name="buttosn" uk-toggle="" value="تعديل"/>
 
