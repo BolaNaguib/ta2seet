@@ -15,27 +15,47 @@
 }
 
 .payinststatus {
-    background-color: #008005;
-    color: #fff;
-    border-radius: 4px;
-    padding: 10px;
+  background-color: #008005;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
 }
 
-.refundinststatus{
+.refundinststatus {
   background-color: #800028;
   color: #fff;
   border-radius: 4px;
   padding: 10px;
 }
-.inststatus{
+
+.inststatus {
   background-color: #005b80;
   color: #fff;
   border-radius: 4px;
   padding: 10px;
 }
-.printstatus{
+
+.printstatus {
   background-color: #c76500;
   color: #fff;
   border-radius: 4px;
   padding: 10px;
+}
+
+.districtcard {
+  background-color: #8e0047;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+.districtcard:hover {
+  background-color: #6d0036;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+..districtcard {
+color: inherit !important;
 }
