@@ -283,7 +283,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
             <td> <span class="payinststatus">  دفع قسط </span></td>';
                 }else if($uus['kind']==""){
                     $tex=' <td> '.$note.' </td>
-            <td> <span class="inststatus"> قسط </span></td>';
+            <td> <span class="inststatus">  قسط جديد</span></td>';
                 }
                 $nunumb++;
             echo '
@@ -378,11 +378,11 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
                 $totall =  (intval(myf2($uusw['price'])) * intval(myf2($uusw['useful'])) / 100) + intval(myf2($uusw['price']));
 
                  if($uusw['kind']==myf1('cash_mortag3')){
-                    $tex="مرتجع";
+                   $tex="<span class='refundinststatus'> مرتجع </span>";
                 }else if($uusw['kind']==myf1('cash_pay')){
-                    $tex="دفع كاش";
+                  $tex="<span class='payinststatus'> دفع كاش </span>";
                 }else if($uusw['kind']==myf1('cash')){
-                    $tex="كاش";
+                    $tex="<span class='inststatus'> كاش </span>";
                 }
 
             echo '
