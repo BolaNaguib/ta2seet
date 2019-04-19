@@ -1,1 +1,6 @@
-added styling 
+.userInput{
+  background-color: #eee;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
