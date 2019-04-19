@@ -277,13 +277,13 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
 
                 if($uus['kind']==myf1('2st_mortag3')){
                       $tex=' <td> '.myf2($uus['notes']).' </td>
-            <td> مرتجع </td>';
+            <td> <span class="refundinststatus"> مرتجع </span></td>';
                 }else if($uus['kind']==myf1('2st_pay')){
                      $tex=' <td> '.myf2($uus['notes']).' </td>
-            <td> دفع قسط </td>';
+            <td> <span class="payinststatus">  دفع قسط </span></td>';
                 }else if($uus['kind']==""){
                     $tex=' <td> '.$note.' </td>
-            <td> قسط </td>';
+            <td> <span class="inststatus"> قسط </span></td>';
                 }
                 $nunumb++;
             echo '
@@ -359,7 +359,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
           echo " كاش "." ( ".$tttoal." )";
           ?>
         </h3>
-      <table class="uk-table  uk-table-justify uk-table-divider">
+      <table class="uk-table uk-table-striped  uk-table-justify uk-table-divider">
         <thead>
           <tr>
             <th>التاريخ</th>

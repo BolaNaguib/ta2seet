@@ -13,3 +13,23 @@
   width: 100px;
   display: -webkit-inline-box;
 }
+
+.payinststatus {
+    background-color: #008005;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.refundinststatus{
+  background-color: #800028;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+.inststatus{
+  background-color: #005b80;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
