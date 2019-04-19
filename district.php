@@ -57,7 +57,7 @@ if(empty($_SESSION['didi'])){
         <div class="uk-width-1-3">
       <a href="#new_category" uk-toggle>
 
-        <div class="uk-card uk-card-default uk-padding uk-padding-large">
+        <div class="uk-card uk-card-default uk-padding uk-padding-large adddistrictcard">
           <h1>
             إضافة منطقة جديدة
           </h1>
