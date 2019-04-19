@@ -253,7 +253,7 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
           echo " قسط "." ( ".$ttoal." )";
           ?>
         </h3>
-      <table class="uk-table  uk-table-justify uk-table-divider">
+      <table class="uk-table uk-table-striped  uk-table-justify uk-table-divider">
         <thead>
           <tr>
             <th>التاريخ</th>
