@@ -277,13 +277,13 @@ $mss = mysqli_query($mu2,"SELECT * FROM users WHERE id='".myf2($_GET['i'])."'");
 
                 if($uus['kind']==myf1('2st_mortag3')){
                       $tex=' <td> '.myf2($uus['notes']).' </td>
-            <td> <span class="refundinststatus"> مرتجع </span></td>';
+            <td>a</td>'; //
                 }else if($uus['kind']==myf1('2st_pay')){
                      $tex=' <td> '.myf2($uus['notes']).' </td>
-            <td> <span class="payinststatus">  دفع قسط </span></td>';
+            <td>s </td>'; //<span class="payinststatus">  دفع قسط </span>
                 }else if($uus['kind']==""){
                     $tex=' <td> '.$note.' </td>
-            <td> <span class="inststatus"> قسط </span></td>';
+            <td> d</td>'; //<span class="inststatus"> قسط </span>
                 }
                 $nunumb++;
             echo '
