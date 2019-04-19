@@ -428,7 +428,7 @@ $aee = mydate($date_fy,$date_fm,$date_fd,$date_ty,$date_tm,$date_td);
                      echo '
           <div class="" uk-grid>
     <div class="uk-width-1-1">
-      <table class="uk-table  uk-table-justify uk-table-divider">
+      <table class="uk-table uk-table-striped uk-table-justify uk-table-divider">
         <thead>
           <tr>
             <th>م</th>
