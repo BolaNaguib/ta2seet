@@ -56,6 +56,6 @@
   box-shadow: 5px 5px 5px 0px #c3c1c1;
   transition: 300ms;
 }
-..districtcard {
+.districtcard h1 {
 color: inherit !important;
 }
