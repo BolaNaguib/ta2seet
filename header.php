@@ -14,6 +14,11 @@
     <body>
       <div class="header">
 
+        <?php 
+          require_once 'navbar.php'; 
+          ?>
+
+
       </div>
       <div class="content">
         <div class="uk-padding">

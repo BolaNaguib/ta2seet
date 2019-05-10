@@ -1,0 +1,130 @@
+.userInput {
+  border: 1px solid #eee;
+  padding: 12px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.userLabel {
+  background-color: #eee;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100px;
+  display: -webkit-inline-box;
+}
+
+.payinststatus {
+  background-color: #008005;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.refundinststatus {
+  background-color: #800028;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.inststatus {
+  background-color: #005b80;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.printstatus {
+  background-color: #c76500;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.districtcard {
+  background-color: #8e0047;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+.districtcard:hover {
+  background-color: #6d0036;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+  text-decoration: none;
+}
+.districtcard h1 {
+color: inherit !important;
+}
+
+
+
+
+.adddistrictcard {
+  background-color: #018e00;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+.adddistrictcard:hover {
+  background-color: #155a02;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+  text-decoration: none;
+}
+.adddistrictcard h1 {
+color: inherit !important;
+}
+
+
+
+
+
+
+.areacard {
+  background-color: #8e0047;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+.areacard:hover {
+  background-color: #6d0036;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+  text-decoration: none;
+}
+.areacard h1 {
+color: inherit !important;
+}
+
+
+
+
+.addareacard {
+  background-color: #018e00;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+}
+.addareacard:hover {
+  background-color: #155a02;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px #c3c1c1;
+  transition: 300ms;
+  text-decoration: none;
+}
+.addareacard h1 {
+color: inherit !important;
+}
