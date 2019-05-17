@@ -144,7 +144,9 @@ $text = str_replace("hfhewf","ي",$text);
     
     return $text;
 }
-//echo myf1("aswan");
-//echo myf2("sxrzkvnzmgminzmgmi")+myf2("blttiynzmgminzmgmi")+myf2("herknenzmgminzmgmi")+myf2("sxrzkvnzmgminzmgminzmgmi")+myf2("sxrzkvnzmgminzmgminzmgmi");
+
+                    
+//echo myf2("sxrzkvnzmgmiscaqjthiovaa : nzmgmikhaidn : scaqjtscaqjt");
+//echo myf1("2019 : 03 : 09");
 
 ?>

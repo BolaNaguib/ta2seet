@@ -64,6 +64,7 @@ if(!empty($_GET['a']) && !empty($_GET['s'])){
                   }else {
                       
                        echo '
+                       <td></td>
                        <td><a class="uk-button uk-button-default" name="button" href="addnewclient.php?de='.myf1($mmu['id']).'" uk-toggle=""> حذف</a></td></tr>';
                   }
                
